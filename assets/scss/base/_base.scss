@@ -1,0 +1,23 @@
+*{
+    /* outline: 1px solid blue; */
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: $bg-light;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}

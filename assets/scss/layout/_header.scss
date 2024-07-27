@@ -1,4 +1,71 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.container-header{
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 12px;
+
+  @include large{
+    padding: 0 36px;
+  }
+  @include medium{
+    padding: 0;
+  }
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include medium{
+    display: block;
+  }
+
+  .logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    @include medium{
+      padding-left: 15px;
+    }
+
+    a{
+      width: 80px;
+      height: 48.57px;
+    }
+  }
+
+  .main-nav{
+    display: flex;
+    font-size: 20px;
+
+    @include medium{
+      flex-wrap: wrap;
+      font-size: 16px;
+    }
+
+    li{
+      @include medium{
+        width: 50%;
+        border: 1px solid #FFFFFF;
+      }
+    }
+    
+    a{
+      padding: 25px 12px;
+      color: $white;
+  
+      @include medium{
+        width: 100%;
+        padding: 12px 0;
+      }
+    }
+  
+    a:hover{
+      color: $bg-light;
+      @include medium{
+        background: $secondary;
+      }
+    }
+  }
 }

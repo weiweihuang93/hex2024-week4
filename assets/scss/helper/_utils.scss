@@ -1,0 +1,100 @@
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 80px 12px;
+    @include large{
+        max-width: 720px;
+    }
+    @include medium{
+        max-width: 372px;
+        padding: 40px 12px;
+    }
+}
+
+// 背景色
+.bg-primary{
+    background: $primary;
+}
+.bg-light{
+    background: $bg-light;
+}
+
+.en-txt{
+    font-family: "Roboto";
+}
+
+// 卡片
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-list-m{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.list-item{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.list-item-25{
+    width: 25%;
+}
+.list-item-33{
+    width: 33.3%;
+}
+.list-item-50{
+    width: 50%;
+}
+@media (max-width: 992px) {
+    .list-item-md-50{
+        width: 50%;
+    }
+    .list-item-md-100{
+        width: 100%;
+    }
+    .list-item-md-83{
+        width: 83%;
+    }
+}
+@media (max-width: 768px) {
+    .list-item-sm-100{
+        width: 100%;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.main-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include medium{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.sub-title h1{
+    font-size: 42px;
+    font-weight: 500;
+
+    @include medium{
+        font-size: 24px;
+    }
+}
+.sub-title h2{
+    font-size: 32px;
+    margin-bottom: 32px;
+
+    @include medium{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
