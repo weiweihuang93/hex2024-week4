@@ -1,0 +1,102 @@
+.section-location{
+    
+    .main-title{
+        text-align: left;
+        position: relative;
+        color: $black;
+
+        ::before{
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 72px;
+            top: 0;
+            left: -4px;
+            background: #9F1213;
+
+            @include medium{
+                height: 36px;
+                top: 0;
+                left: -4px;
+            }
+        }
+        h1{
+            padding-left: 16px;
+            margin-bottom: 32px;
+        }
+        
+    }
+    .region{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 40px;
+
+        @include medium{
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        h2{
+            font-size: 24px;
+
+            @include medium{
+                font-size: 16px;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: #495057;
+        }
+        .region-list{
+            width: 304px;
+            height: 38px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #CED4DA;
+            padding: 6px 12px;
+
+            @include medium{
+                width: 276px;
+            }
+        }
+    }
+
+    .card-list-m{
+        row-gap: 48px;
+
+        @include large{
+            row-gap: 24px;
+        }
+
+        h3{
+            font-size: 24px;
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+        }
+        .store-txt{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 20px;
+            border: 1px solid #00000020;
+            padding: 16px 24px;
+        }
+        .store-txt li{
+            display: flex;
+            gap: 8px;
+        }
+        .more-btn{
+            font-size: 19px;
+            background: $black;
+            color: $white;
+            width: 100%;
+            text-align: center;
+        }
+        .more-btn a{
+            width: 100%;
+            padding: 16px 0;
+        }
+    }
+}
