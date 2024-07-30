@@ -1,17 +1,4 @@
 /* section-banner */
-.container-banner{
-  max-width: 1320px;
-  margin: auto;
-  padding: 0 12px;
-
-  @include large{
-    padding: 0 36px;
-  }
-  @include medium{
-    padding: 0 12px;
-  }
-}
-
 .section-banner{
   background-image: url(../images/home-header.png);
   background-repeat: no-repeat;
@@ -26,7 +13,7 @@
     height: calc(100vh - 180px);
   }
 
-  .container-banner{
+  .container-0{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -74,6 +61,17 @@
 /* section-service */
 .section-service{
   background: $bg-light;
+
+  .main-title{
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include medium{
+      margin-bottom: 24px;
+    }
+  }
+
   h3{
     font-size: 24px;
     font-weight: bold;
@@ -91,6 +89,19 @@
 }
 
 /* section-classic */
+.section-classic{
+  
+  .main-title{
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include medium{
+      margin-bottom: 24px;
+    }
+  }
+}
+
 .section-classic .card-list-m{
   @include large{
     row-gap: 24px;
@@ -122,9 +133,15 @@
   @include medium{
     background-image: url(../images/index-bg-sm.png);
   }
-  
-  h2{
+
+  .main-title{
     color: $white;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include medium{
+      margin-bottom: 24px;
+    }
   }
 
   .card-list{
@@ -142,6 +159,18 @@
 }
 
 /* section-recommend */
+.section-recommend{
+  .main-title{
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include medium{
+      margin-bottom: 24px;
+    }
+  }
+}
+
 .section-recommend .card-list-m{
   @include large{
     row-gap: 24px;
@@ -167,6 +196,17 @@
 }
 
 /* section-form */
+.section-form{
+  .main-title{
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include medium{
+      margin-bottom: 24px;
+    }
+  }
+}
 .section-form .main-content{
   display: flex;
   flex-direction: column;
