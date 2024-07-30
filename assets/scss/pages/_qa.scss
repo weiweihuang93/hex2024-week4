@@ -1,0 +1,47 @@
+.section-qa .container{
+    padding-top: 96px;
+
+    @include large{
+        padding-top: 80px;
+    }
+
+    @include medium{
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    .main-title-pseudo{
+        margin-bottom: 32px;
+
+        @include medium{
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.section-qa .main-content{
+    width: 66%;
+    margin-right: auto;
+
+    @include large{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    .qa-list{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        font-size: 16px;
+
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    }
+}

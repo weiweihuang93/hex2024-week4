@@ -1,0 +1,143 @@
+/* blog-nav */
+.blog-nav{
+    background: $secondary;
+}
+.blog-nav .container-0{
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        color: #FFFFFF;
+    }
+    .sec-nav{
+        display: flex;
+        gap: 48px;
+
+        li a{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    @include medium{
+        display: none;
+    }
+
+}
+/* section-blog */
+.section-blog .container{
+    padding-top: 96px;
+
+    @include large{
+        padding-top: 80px;
+    }
+    @include medium{
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    .main-title-pseudo{
+        @include large{
+            margin-bottom: 40px;
+        }
+        @include medium{
+            margin-bottom: 24px;
+        }
+    }
+}
+.section-blog .main-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    @include large{
+        row-gap: 24px;
+    }
+    h2{
+        font-size: 32px;
+        color: $secondary;
+
+        @include large{
+            font-size: 24px;
+        }
+    }
+    .blog-txt{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+
+        @include large{
+            margin-bottom: 4px;
+        }
+
+        h3{
+            font-size: 20px;
+            font-weight: 500;
+
+            @include large{
+                font-size: 16px;
+            }
+        }
+        time{
+            opacity: 0.7;
+            font-weight: 500;
+        }
+    }
+    p{
+        font-size: 20px;
+        color: #555555;
+
+        @include large{
+            font-size: 16px;
+        }
+        @include medium{
+            display: none;
+        }
+    }
+    .blog-more{
+        display: none;
+
+        @include large{
+            display: inline;
+        }
+    }
+    .blog-more-none{
+        @include large{
+            display: none;
+        }
+    }
+    // 圖片
+    .blog-pic img{
+        height: 100%;
+    }
+    
+    .blog-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @include medium{
+            display: block;
+        }
+    }
+    .blog-more-btn a{
+        font-size: 36px;
+        font-weight: 900;
+        color: $secondary;
+
+        @include large{
+            display: none;
+        }
+    }
+}
+
+@include large{
+
+}
+@include medium{
+    
+}
